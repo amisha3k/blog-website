@@ -1,16 +1,14 @@
 {% extends 'layout.html' %}
 
- {% block title %}
-   Register a new user
- {% endblock %}  
-
- {% block content%}
- <h1>Register a new user</h1>
- <form action="{% url 'users:register' %}" method="POST">
-  {% csrf_token %}
-  {{ form.as_p }}  <!-- Renders form fields with error messages -->
-  <button type="submit">Register</button>
-</form>
-
+{% block title %}
+    Register a New User
 {% endblock %}
 
+{% block content %}
+    <h1>  Register a New User</h1>
+    <form class="form-with-validation" action="/users/register/" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button class="form-submit">Submit</button>
+    </form>
+{% endblock %}
