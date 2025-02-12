@@ -1,11 +1,67 @@
- {% extends "layout.html" %}
+{% extends "layout.html" %}
 
- {% block title %}
-   home
- {% endblock %}  
+{% block title %}
+  Home
+{% endblock %}
 
- {% block content%}
- <h1>HOME</h1>
- <p>check out my <a href="/about">about</a> page.</p>
- <img src="blog3.webp" alt="">
- {% endblock %}
+{% block content %}
+<div class="home-container">
+    <section class="welcome-banner">
+        <h1 class="fade-in">Welcome to My Blog!</h1>
+        <p class="fade-in">Bringing Ideas to Life with Code.</p>
+    </section>
+</div>
+
+<style>
+    body {
+        background-color: #000;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+
+    .home-container {
+        max-width: 900px;
+        margin: 20px auto;
+        background: #1c1c1c;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    }
+
+    .welcome-banner {
+        background-color: #333;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+
+    .welcome-banner h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    .welcome-banner p {
+        font-size: 1.5rem;
+        color: #ccc;
+    }
+
+    /* Animation Styles */
+    .fade-in {
+        opacity: 0;
+        animation: fadeInAnimation 2s ease-in forwards;
+    }
+
+    @keyframes fadeInAnimation {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+{% endblock %}
