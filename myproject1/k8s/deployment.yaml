@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: django-blog-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: django-blog
+  template:
+    metadata:
+      labels:
+        app: django-blog
+    spec:
+      containers:
+      - name: django-blog
+        image: django-blog:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8000
