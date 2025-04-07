@@ -1,0 +1,107 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  About
+{% endblock %}
+
+{% block content %}
+<div class="about-container">
+    <section class="intro">
+        <h1>About Me</h1>
+        <p>Hello! I'm Amisha Khichariya, a passionate software developer with a strong foundation in web development and a keen interest in building innovative applications.</p>
+    </section>
+
+    <section class="tech-stack">
+        <h2>Tech Stack</h2>
+        <ul>
+            <li>Python & Django (Back-end framework)</li>
+            <li>HTML5, CSS3 (Front-end development)</li>
+            <li>JavaScript (Enhancing interactivity)</li>
+            <li>SQLite (Database)</li>
+            <li>Bootstrap (For responsive design)</li>
+        </ul>
+    </section>
+
+    <section class="journey">
+        <h2>Project Journey</h2>
+        <p>This blog website was created to share ideas and knowledge. I tackled challenges like user authentication and responsive design, which strengthened my problem-solving skills and deepened my understanding of Django and web development.</p>
+    </section>
+
+    <section class="future-scope">
+        <h2>Future Scope</h2>
+        <ul>
+            <li>Integrating a comment section for user engagement.</li>
+            <li>Implementing SEO best practices for better visibility.</li>
+            <li>Adding user profiles and customization options.</li>
+            <li>Deploying the site on AWS or another cloud platform.</li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to connect with me through the following platforms:</p>
+        <div class="contact-links" >
+            <a href="https://www.linkedin.com/in/amisha-khichariya-123amisha09" target="_blank">🔗 LinkedIn</a>
+            <a href="https://github.com/amisha3k" target="_blank">🐱 GitHub</a>
+            <a href="mailto:khichariyaamisha@email.com">📧 Email Me</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Amisha Khichariya. All rights reserved.</p>
+    </footer>
+</div>
+
+<style>
+    body {
+        background-color: #000;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+
+    .about-container {
+        margin: 20px auto;
+        background: #1c1c1c;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    }
+
+    h1, h2 {
+        margin-bottom: 15px;
+        
+    }
+
+    p, ul {
+        margin-bottom: 20px;
+
+    }
+
+    ul {
+        list-style-type: square;
+        margin-left: 20px;
+        font-size: 1.2rem;
+    }
+
+    .contact-links a {
+      display: inline-block;
+      margin-right: 15px;
+      text-decoration: none;
+      color: #1e90ff;
+      font-size: 1.2rem; /* Adjust the size as needed */
+  }
+  
+  .contact-links a:hover {
+      text-decoration: underline;
+  }
+  
+
+    footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.9rem;
+        color: #aaa;
+    }
+</style>
+{% endblock %}
